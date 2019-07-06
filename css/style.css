@@ -140,7 +140,10 @@ header {
 
 
 
-.signupSection {}
+.signupSection {
+	background-color: #c8c9cc;
+	height: 300px; 
+}
 
 .signupContent {}
 
@@ -156,11 +159,33 @@ header {
 
 
 
-.blogSection {}
+.blogSection {
+	padding: 30px 0;
+}
 
-.blogSection button {}
+.blogSection .container {
+	width: 900px;
 
-.blogSection button a {}
+}
+
+.blogSection .btn {
+	text-align: center;
+}
+
+.blogSection button {
+	background: transparent;
+	
+	border: solid 1px;
+	padding: 10px 25px;
+}
+
+.blogSection button a {
+	text-decoration: none;
+	font-size: 20px;
+	color: #6d6d6d;
+	
+
+}
 
 
 
