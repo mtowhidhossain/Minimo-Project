@@ -2,7 +2,8 @@
 <html>
 <head>
 	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/45e1c2748f.js"></script>
 
 	<link rel="icon" href="images/fav.png">
 	<title>Minimo Project</title>
@@ -13,7 +14,7 @@
 	<header>
 		<div class="container">
 			<div class="logo">
-				<img src="images/logo.jpg">
+				<a href="#"> <img src="images/logo.jpg"> </a>
 			</div>
 			
 			<div class="navbar">
@@ -99,12 +100,10 @@
 	<section class="signupSection">
 		<div class="container">	
 			<div class="signupContent">	
-				<h3> Sign up for our newletter! </h3>
+				<h2> Sign up for our newsletter! </h2>
 				<form>
-					<input type="input" name="email">
-					<button class="submit">
-						<a href="#"></a>
-					</button>
+					<input type="input" name="email" placeholder="Enter a valid email address">
+					<button class="submit" type="submit"> <i class="fas fa-location-arrow"></i> </button>
 				</form>
 			</div>					
 		</div>	
@@ -117,17 +116,17 @@
 	<section class="blogSection">
 		<div class="container">
 			<div class="content">
-				<img src="images/article1.jpg" alt="article1">
-				<h6> lifestyle </h6>
-				<h2> More than just a music festival </h2>
+				<img src="images/running.jpg" alt="article1">
+				<h6> Lifestyle </h6>
+				<h2> Top 10 song for running </h2>
 				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod			
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</div>
 			<div class="content">
-				<img src="images/article2.jpg" alt="article2">
-				<h6> lifestyle </h6>
-				<h2> Life tastes better with coffee </h2>
+				<img src="images/winter.jpg" alt="article2">
+				<h6> Lifestyle </h6>
+				<h2> Cold winter days </h2>
 				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod			
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
@@ -144,17 +143,20 @@
 
 	<footer>
 		<div class="container">
-			<span>
-				<a href="#">Terms and condition</a>
-				<a href="#">Privacy</a>
-			</span>
-
-			<span>Follow</span>
-			<a class="social"></a>
-			<a class="social"></a>
-			<a class="social"></a>	
-
+			<div class="footer-menu">
+				<span> <a href="#">Terms and conditions</a> </span>
+				<span> <a href="#">Privacy</a> </span>
+			</div>
 			
+			<div class="footer-social">
+				<span>Follow</span>
+				<span>
+					<a class="facebook"> <i class="fab fa-facebook-f"></i> </a>
+					<a class="twitter"> <i class="fab fa-twitter"></i> </a>
+					<a class="instagram"> <i class="fab fa-instagram"></i> </a>	
+				</span>
+				
+			</div>			
 
 		</div>
 	</footer>
