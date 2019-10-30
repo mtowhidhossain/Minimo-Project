@@ -5,11 +5,15 @@
 	-moz-box-sizing: border-box;
 }
 
+.container{
+  max-width: 900px !important;
+}
+
 body {
 	font-family: 'Playfair Display', serif;
 }
 
-/*--------------------------------------------------------------------------*/
+/*---------------------------------header section starts-----------------------------------------*/
 
 header {
 	padding: 50px 0;
@@ -49,7 +53,7 @@ header {
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #6d6d6d;
-	padding: 0 0 0 100px; 
+	padding: 0 0 0 54px; 
 }
 
 .navbar ul li a:hover {
@@ -57,17 +61,20 @@ header {
 	text-decoration: underline;
 }
 
-/*--------------------------------------------------------------------------------*/
+/*------------------------------------banner section starts--------------------------------------------*/
 
 .bannerSection {
 	padding: 20px 0;
 }
 
 .bannerSection img {
-	width: 1100px;
+  height: auto;
 }
 
-/*--------------------------------------------------------------------------------*/
+
+
+
+/*--------------------------------------about section starts------------------------------------------*/
 
 .about {
 	padding: 50px 0;
@@ -113,7 +120,10 @@ header {
 }
 
 
-/*-----------------------------------------------------------------------------*/
+
+
+
+/*------------------------------------gallery section starts-----------------------------------------*/
 
 .gallerySection {
 	padding: 20px 0;
@@ -121,13 +131,12 @@ header {
 }
 
 .gallerySection .container {
-	width: 900px;
+	max-width: 900px;
 }
 
 .content{
 	display: inline-block;
-	float: left;
-	margin: 20px 50px 20px 0;
+	margin: 20px 30px 20px 0;
 	max-width: 400px;
 }
 
@@ -157,16 +166,24 @@ header {
 }
 
 
-/*---------------------------------------------------------------------------------*/
+
+
+
+/*--------------------------------------signup section starts-------------------------------------------*/
 
 .signupSection {
 	background-color: #c8c9cc;
 	height: 300px; 
-	margin: 30px 0 60px 0;
+  margin: 30px 0 60px 0;
+  /* width: 900px !important; */
 }
 
+/* .signupSection .container{
+  width: 100% !important;
+} */
+
 .signupContent {
-	text-align: center;
+  text-align: center;
 }
 
 .signupContent h2 {
@@ -200,7 +217,10 @@ header {
 }
 
 
-/*------------------------------------------------------------------------------*/
+
+
+
+/*-------------------------------------blog section starts-----------------------------------------*/
 
 
 .blogSection {
@@ -213,7 +233,7 @@ header {
 
 }
 
-.blogSection .btn {
+.blogSection .button {
 	text-align: center;
 	margin: 700px 70px 50px 0;
 }
@@ -236,18 +256,23 @@ header {
 }
 
 
-/*--------------------------------------------------------------------------------*/
+
+
+
+
+/*-----------------------------------------footer section starts---------------------------------------*/
 
 
 footer {
 	background-color: #c8c9cc;
-	height: 110px;
+  height: 110px;
+  width: 100%;
 }
 
-footer .container {
+/* footer .container {
 	width: 900px;
 	height: 100px;
-}
+} */
 
 footer .footer-menu {
 	width: 80%;
@@ -282,7 +307,7 @@ footer .footer-social {
 
 footer .footer-social span {
 	color: #313131;
-	padding: 0 0 0 10px;
+	/* padding: 0 0 0 10px; */
 }
 
 footer .footer-social a:hover {
@@ -292,5 +317,72 @@ footer .footer-social a:hover {
 
 footer .footer-social a i {
 	cursor: pointer;
-	padding: 0 0 0 10px;
+	margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+/* -----------------------------media queries starts--------------------------------------- */
+
+/* // Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... }
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
+
+
+@media (min-width: 768px) and (max-width: 1199.98px) { ... }*/
+
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  .navbar ul li a {
+    padding: 0 0 0 54px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) { 
+  .navbar ul li a {
+    padding: 0 0 0 75px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) { 
+  .navbar ul li a {
+    padding: 0 0 0 50px;
+  }  
+}
+
+@media (max-width: 575.98px) {
+    .navbar ul li a {
+      padding: 0 0 0 50px;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+  .content{
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .signupSection, footer {
+    width: 900px;
+  }
 }
